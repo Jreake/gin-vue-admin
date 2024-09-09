@@ -8,12 +8,12 @@
 
 <script>
 export default {
-  name: 'App'
-}
+  name: "App",
+};
 </script>
 
 <script setup>
-import zhCn from 'element-plus/lib/locale/lang/zh-cn'
+import zhCn from "element-plus/es/locale/lang/zh-cn";
 </script>
 <style lang="scss">
 // 引入初始化样式
@@ -23,7 +23,7 @@ import zhCn from 'element-plus/lib/locale/lang/zh-cn'
   overflow: hidden;
   font-weight: 400 !important;
 }
-.el-button{
+.el-button {
   font-weight: 400 !important;
 }
 </style>
