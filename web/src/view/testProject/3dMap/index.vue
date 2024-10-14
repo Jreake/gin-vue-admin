@@ -9,7 +9,7 @@ import vrRenderModel from "./vrRenderModel";
 onMounted(async () => {
   const modelApi = new vrRenderModel("#vr-model");
   // 17
-  const load = await modelApi.init("threeFile/glb/glb-6.glb", "glb");
+  const load = await modelApi.init("threeFile/glb/A.glb", "glb");
 });
 </script>
 
