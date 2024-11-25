@@ -22,3 +22,9 @@ type ExaFileChunk struct {
 	FileChunkNumber int
 	FileChunkPath   string
 }
+
+
+// 测试数据
+type ExaTestData struct {
+	testName 	string
+}

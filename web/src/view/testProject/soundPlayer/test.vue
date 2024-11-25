@@ -38,13 +38,14 @@
   </div>
 
   <div id="waveform" ref="waveform" v-show="isWaveform"></div>
-  <!-- <button @click="playMusic" style="margin-top: 50px;">播放</button> -->
+  <el-button @click="handleNodeServer()">node服务测试</el-button>
 </template>
 
 <script setup>
 import { ref, watch, onMounted } from "vue";
 import { ElButton, ElUpload } from "element-plus";
 import WaveSurfer from "wavesurfer.js";
+import { testNodeServer } from "@/api/test.js";
 //波形框显示
 let isWaveform = ref(false);
 
@@ -159,6 +160,13 @@ const dataURLtoBlob = (dataurl) => {
   return new Blob([u8arr], {
     type: mime,
   });
+};
+// 测试node服务
+const handleNodeServer = async () => {
+  try {
+    const res = await testNodeServer({ name: "测试" });
+  } catch (e) {}
+  console.log(111111111111);
 };
 </script>
 
